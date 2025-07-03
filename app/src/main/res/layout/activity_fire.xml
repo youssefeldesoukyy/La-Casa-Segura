@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradback"
+    tools:context=".Motion">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="25dp"
+        android:layout_margin="30dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/imgCardF"
+                android:layout_width="300dp"
+                android:layout_height="226dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="90dp"
+                app:cardBackgroundColor="#DCDCDC"
+                app:cardCornerRadius="30dp">
+
+                <ImageView
+                    android:id="@+id/Firesens"
+                    android:layout_width="match_parent"
+                    android:layout_height="230dp"
+                    app:srcCompat="@drawable/fire" />
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/descriptionFire"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imgCardF"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                android:text="A flame-sensor is one kind of detector which is mainly designed for detecting as well as responding to the occurrence of a fire or flame. The flame detection response can depend on its fitting. It includes an alarm system, a natural gas line, propane and a fire suppression system. This sensor is used in industrial boilers. The main function of this is to give authentication whether the boiler is properly working or not. The response of these sensors is faster as well as more accurate compare with a heat/smoke detector because of its mechanism while detecting the flame."
+                android:textColor="@color/black"
+                android:textSize="17dp"
+                tools:ignore="HardcodedText,MissingConstraints"
+                tools:layout_editor_absoluteX="6dp"
+                tools:layout_editor_absoluteY="251dp" />
+
+            <TextView
+                android:id="@+id/Ftitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="25dp"
+                android:text="Fire Sensors"
+                android:textSize="34sp" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

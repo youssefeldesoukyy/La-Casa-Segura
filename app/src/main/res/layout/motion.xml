@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradback"
+    tools:context=".Motion">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="25dp"
+        android:layout_margin="30dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="660dp">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/imgCard"
+                android:layout_width="300dp"
+                android:layout_height="226dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="90dp"
+                app:cardBackgroundColor="#DCDCDC"
+                app:cardCornerRadius="30dp">
+
+                <ImageView
+                    android:id="@+id/motionsens"
+                    android:layout_width="match_parent"
+                    android:layout_height="230dp"
+                    app:srcCompat="@drawable/pngwing_com__2_" />
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/descriptionMotion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imgCard"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                android:text="PIR sensors allow you to sense motion, almost always used to detect whether a human has moved in or out of the sensors range. They are small, inexpensive, low-power, easy to use and don't wear out. For that reason they are commonly found in appliances and gadgets used in homes or businesses. They are often referred to as PIR, &quot;Passive Infrared&quot;, &quot;Pyroelectric&quot;, or &quot;IR motion&quot; sensors . PIRs are basically made of a pyroelectric sensor, which can detect levels of infrared radiation."
+                android:textColor="@color/black"
+                android:textSize="17dp"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="6dp"
+                tools:layout_editor_absoluteY="251dp" />
+
+            <TextView
+                android:id="@+id/Mtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="25dp"
+                android:text="Motion Sensors"
+                android:textSize="34sp" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>
